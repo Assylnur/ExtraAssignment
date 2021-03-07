@@ -53,7 +53,7 @@ const msg = () => {
         console.log(`The most frequent word of the message is "${theMostFrequentWord}"`)
         console.log(`The number of words in the message is ${numberOfWordsInTheMessage}`)
 
-        let randomNumber = Math.floor(Math.random() * randomPhrasesAndPictures.length);//Random numbers between 1 and the length of the randomPhrasesAndPictures
+        let randomNumber = Math.floor(Math.random() * randomPhrasesAndPictures.length);//Random numbers between 0 and the length of the randomPhrasesAndPictures
         document.getElementById("phrase").innerHTML = randomPhrasesAndPictures[randomNumber].phrase;
         document.getElementById("picture").innerHTML = '<img style="width: 400px; height: 280px;" alt="Random photo" src="' + randomPhrasesAndPictures[randomNumber].imageURL + '" />';
     }
